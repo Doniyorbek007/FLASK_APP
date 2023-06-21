@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\O'quvchi\Desktop\FLASK_APP\env"
+VIRTUAL_ENV="C:\Users\IT CENTER KARMANA\Desktop\Flask_APP\env"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
