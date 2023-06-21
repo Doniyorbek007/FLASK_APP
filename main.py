@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 import data
+
 app = Flask(__name__)
 
 @app.route("/")
@@ -16,7 +17,7 @@ def user():
 
 @app.route("/admin/<name>")
 def admin(name):
-    return render_template('admin', context = name)
+    return render_template('admin.html', context = name)
 
 if __name__ == '__main__':
    app.run(debug = True)
