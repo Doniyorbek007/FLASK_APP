@@ -14,9 +14,9 @@ def blog():
 def user():
     return render_template('user.html', context = data.users)
 
-@app.route("/admin")
-def admin():
-    return render_template('admin.html')
+@app.route("/admin/<name>")
+def admin(name):
+    return render_template('admin', context = name)
 
 if __name__ == '__main__':
    app.run(debug = True)

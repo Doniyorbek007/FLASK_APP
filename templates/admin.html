@@ -7,10 +7,21 @@
     <title>Document</title>
 </head>
 
-<body>
-    <a href="/">Home Page</a>
-    <a href="user">User</a>
-    <a href="blog">Blog</a>
+<body class="text-center">
+
+    <nav>
+        <a href="/">Home Page</a>
+        <a href="user">User</a>
+        <a href="blog">Blog</a>
+    </nav>
+    <hr>
+    <div>
+        {% if context == "sardor"%}
+        <h1>Salom admin!</h1>
+        {% else %}
+        <h1>Salom {{ context }}</h1>
+        {% endif %}
+    </div>
 </body>
 
 </html>
