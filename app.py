@@ -9,4 +9,4 @@ print(result) # False
 if my_list == your_list:
     print("Teng")
 else:
-    print("Teng emas")
+    print("Teng emas")              
